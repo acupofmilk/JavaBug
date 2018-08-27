@@ -1,0 +1,12 @@
+class Class{
+  char age='3';
+	public static void main(String[] args){
+		System.out.println("oh,my god!I am "+age);
+	}
+}
+
+/*在静态的方法中不能直接调用非静态的方法或属性.static void main(String[] args){};
+静态main中调用了非静态的属性age.
+解决方法：1、将非静态的属性/方法变成静态的，如：static char age='3';
+2、new本类，然后通过实例来调用。
+*/
